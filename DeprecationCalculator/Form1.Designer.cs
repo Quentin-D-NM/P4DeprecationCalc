@@ -40,19 +40,19 @@
             this.rbtnDoubleDeclining = new System.Windows.Forms.RadioButton();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLifeTime = new System.Windows.Forms.TextBox();
+            this.txtSalvageVal = new System.Windows.Forms.TextBox();
+            this.txtStartVal = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.lblDateOutInventory = new System.Windows.Forms.Label();
             this.lblDateInInventory = new System.Windows.Forms.Label();
             this.lblLifetime = new System.Windows.Forms.Label();
-            this.lblEndVal = new System.Windows.Forms.Label();
+            this.lblSalvageVal = new System.Windows.Forms.Label();
             this.lblStartVal = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lboxInventory = new System.Windows.Forms.ListBox();
             this.tabSummary = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtFinalvalue = new System.Windows.Forms.TextBox();
             this.btnCalcValue = new System.Windows.Forms.Button();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.tctrMain.SuspendLayout();
@@ -113,14 +113,14 @@
             this.tabInventory.Controls.Add(this.gboxDepreciationType);
             this.tabInventory.Controls.Add(this.dateTimePicker2);
             this.tabInventory.Controls.Add(this.dateTimePicker1);
-            this.tabInventory.Controls.Add(this.textBox4);
-            this.tabInventory.Controls.Add(this.textBox3);
-            this.tabInventory.Controls.Add(this.textBox2);
-            this.tabInventory.Controls.Add(this.textBox1);
+            this.tabInventory.Controls.Add(this.txtLifeTime);
+            this.tabInventory.Controls.Add(this.txtSalvageVal);
+            this.tabInventory.Controls.Add(this.txtStartVal);
+            this.tabInventory.Controls.Add(this.txtTitle);
             this.tabInventory.Controls.Add(this.lblDateOutInventory);
             this.tabInventory.Controls.Add(this.lblDateInInventory);
             this.tabInventory.Controls.Add(this.lblLifetime);
-            this.tabInventory.Controls.Add(this.lblEndVal);
+            this.tabInventory.Controls.Add(this.lblSalvageVal);
             this.tabInventory.Controls.Add(this.lblStartVal);
             this.tabInventory.Controls.Add(this.lblTitle);
             this.tabInventory.Controls.Add(this.lboxInventory);
@@ -199,33 +199,33 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(183, 20);
             this.dateTimePicker1.TabIndex = 11;
             // 
-            // textBox4
+            // txtLifeTime
             // 
-            this.textBox4.Location = new System.Drawing.Point(376, 105);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(183, 20);
-            this.textBox4.TabIndex = 10;
+            this.txtLifeTime.Location = new System.Drawing.Point(376, 105);
+            this.txtLifeTime.Name = "txtLifeTime";
+            this.txtLifeTime.Size = new System.Drawing.Size(183, 20);
+            this.txtLifeTime.TabIndex = 10;
             // 
-            // textBox3
+            // txtSalvageVal
             // 
-            this.textBox3.Location = new System.Drawing.Point(376, 77);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtSalvageVal.Location = new System.Drawing.Point(376, 77);
+            this.txtSalvageVal.Name = "txtSalvageVal";
+            this.txtSalvageVal.Size = new System.Drawing.Size(183, 20);
+            this.txtSalvageVal.TabIndex = 9;
             // 
-            // textBox2
+            // txtStartVal
             // 
-            this.textBox2.Location = new System.Drawing.Point(376, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtStartVal.Location = new System.Drawing.Point(376, 49);
+            this.txtStartVal.Name = "txtStartVal";
+            this.txtStartVal.Size = new System.Drawing.Size(183, 20);
+            this.txtStartVal.TabIndex = 8;
             // 
-            // textBox1
+            // txtTitle
             // 
-            this.textBox1.Location = new System.Drawing.Point(376, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtTitle.Location = new System.Drawing.Point(376, 20);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(183, 20);
+            this.txtTitle.TabIndex = 7;
             // 
             // lblDateOutInventory
             // 
@@ -254,14 +254,14 @@
             this.lblLifetime.TabIndex = 4;
             this.lblLifetime.Text = "Lifetime (years)";
             // 
-            // lblEndVal
+            // lblSalvageVal
             // 
-            this.lblEndVal.AutoSize = true;
-            this.lblEndVal.Location = new System.Drawing.Point(248, 80);
-            this.lblEndVal.Name = "lblEndVal";
-            this.lblEndVal.Size = new System.Drawing.Size(65, 13);
-            this.lblEndVal.TabIndex = 3;
-            this.lblEndVal.Text = "End Value $";
+            this.lblSalvageVal.AutoSize = true;
+            this.lblSalvageVal.Location = new System.Drawing.Point(248, 80);
+            this.lblSalvageVal.Name = "lblSalvageVal";
+            this.lblSalvageVal.Size = new System.Drawing.Size(85, 13);
+            this.lblSalvageVal.TabIndex = 3;
+            this.lblSalvageVal.Text = "Salvage Value $";
             // 
             // lblStartVal
             // 
@@ -291,7 +291,7 @@
             // 
             // tabSummary
             // 
-            this.tabSummary.Controls.Add(this.textBox5);
+            this.tabSummary.Controls.Add(this.txtFinalvalue);
             this.tabSummary.Controls.Add(this.btnCalcValue);
             this.tabSummary.Location = new System.Drawing.Point(4, 22);
             this.tabSummary.Name = "tabSummary";
@@ -301,18 +301,19 @@
             this.tabSummary.Text = "Summary";
             this.tabSummary.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtFinalvalue
             // 
-            this.textBox5.Location = new System.Drawing.Point(343, 55);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(216, 181);
-            this.textBox5.TabIndex = 1;
+            this.txtFinalvalue.Location = new System.Drawing.Point(6, 99);
+            this.txtFinalvalue.Multiline = true;
+            this.txtFinalvalue.Name = "txtFinalvalue";
+            this.txtFinalvalue.ReadOnly = true;
+            this.txtFinalvalue.Size = new System.Drawing.Size(553, 67);
+            this.txtFinalvalue.TabIndex = 1;
+            this.txtFinalvalue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnCalcValue
             // 
-            this.btnCalcValue.Location = new System.Drawing.Point(343, 6);
+            this.btnCalcValue.Location = new System.Drawing.Point(181, 54);
             this.btnCalcValue.Name = "btnCalcValue";
             this.btnCalcValue.Size = new System.Drawing.Size(216, 23);
             this.btnCalcValue.TabIndex = 0;
@@ -361,19 +362,19 @@
         private System.Windows.Forms.RadioButton rbtnDoubleDeclining;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLifeTime;
+        private System.Windows.Forms.TextBox txtSalvageVal;
+        private System.Windows.Forms.TextBox txtStartVal;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label lblDateOutInventory;
         private System.Windows.Forms.Label lblDateInInventory;
         private System.Windows.Forms.Label lblLifetime;
-        private System.Windows.Forms.Label lblEndVal;
+        private System.Windows.Forms.Label lblSalvageVal;
         private System.Windows.Forms.Label lblStartVal;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.ListBox lboxInventory;
         private System.Windows.Forms.TabPage tabSummary;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtFinalvalue;
         private System.Windows.Forms.Button btnCalcValue;
         private System.Windows.Forms.Label label1;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
